@@ -1,0 +1,23 @@
+name: '@raegen/nx'
+description: 'Github action for executing nx commands cached with @actions/cache'
+author: '@raegen'
+
+branding:
+  icon: 'battery'
+  color: 'purple'
+
+inputs:
+  nx:
+    description: 'NX command/args. $ (nx) [command] [...options]'
+    required: true
+    default: '--help'
+
+  cacheDirectory:
+    description: Defines where the local cache is stored.
+    required: false
+    default: .nx/cache/remote
+
+runs:
+  using: node20
+  pre: dist/setup.js
+  main: dist/index.js
