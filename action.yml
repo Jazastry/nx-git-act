@@ -1,4 +1,4 @@
-name: '@jazastry/nx-git-act'
+name: 'nx-git-act'
 description:
   'Github action for executing nx commands cached with @actions/cache'
 author: '@jazastry'
