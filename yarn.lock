@@ -738,6 +738,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jazastry/nx-git-act@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@jazastry/nx-git-act@workspace:."
+  dependencies:
+    "@actions/core": "npm:^1.10.1"
+    "@nx/devkit": "npm:^17.2.8"
+    "@raegen/github-runner": "npm:^0.1.5"
+    "@tsconfig/node20": "npm:^20.1.2"
+    "@types/jest": "npm:^29.5.11"
+    "@types/node": "npm:^20.11.6"
+    "@typescript-eslint/eslint-plugin": "npm:^6.19.1"
+    "@typescript-eslint/parser": "npm:^6.19.1"
+    eslint: "npm:^8.56.0"
+    eslint-plugin-github: "npm:^4.10.1"
+    eslint-plugin-jest: "npm:^27.6.3"
+    eslint-plugin-jsonc: "npm:^2.13.0"
+    eslint-plugin-prettier: "npm:^5.1.2"
+    jest: "npm:^29.7.0"
+    make-coverage-badge: "npm:^1.2.0"
+    nx: "npm:^17.2.8"
+    prettier: "npm:^3.2.4"
+    prettier-eslint: "npm:^16.3.0"
+    ts-jest: "npm:^29.1.2"
+    typescript: "npm:^5.3.3"
+  peerDependencies:
+    nx: ^17.2.8
+  languageName: unknown
+  linkType: soft
+
 "@jest/console@npm:^29.7.0":
   version: 29.7.0
   resolution: "@jest/console@npm:29.7.0"
@@ -1199,35 +1228,6 @@ __metadata:
   checksum: 10c0/4d7102981c3c2d312d1353de1526aeffe5ae34d609fa69fe59c5f8c02963b35669e5d467f621c47f9cde9004be6f20750f28aa7fe3fd0d3a93ae50ac43516636
   languageName: node
   linkType: hard
-
-"@raegen/nx@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@raegen/nx@workspace:."
-  dependencies:
-    "@actions/core": "npm:^1.10.1"
-    "@nx/devkit": "npm:^17.2.8"
-    "@raegen/github-runner": "npm:^0.1.5"
-    "@tsconfig/node20": "npm:^20.1.2"
-    "@types/jest": "npm:^29.5.11"
-    "@types/node": "npm:^20.11.6"
-    "@typescript-eslint/eslint-plugin": "npm:^6.19.1"
-    "@typescript-eslint/parser": "npm:^6.19.1"
-    eslint: "npm:^8.56.0"
-    eslint-plugin-github: "npm:^4.10.1"
-    eslint-plugin-jest: "npm:^27.6.3"
-    eslint-plugin-jsonc: "npm:^2.13.0"
-    eslint-plugin-prettier: "npm:^5.1.2"
-    jest: "npm:^29.7.0"
-    make-coverage-badge: "npm:^1.2.0"
-    nx: "npm:^17.2.8"
-    prettier: "npm:^3.2.4"
-    prettier-eslint: "npm:^16.3.0"
-    ts-jest: "npm:^29.1.2"
-    typescript: "npm:^5.3.3"
-  peerDependencies:
-    nx: ^17.2.8
-  languageName: unknown
-  linkType: soft
 
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.8
