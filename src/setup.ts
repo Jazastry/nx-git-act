@@ -14,7 +14,7 @@ execSync(`sudo ln -sf "${process.execPath}" /usr/bin/node`, {
 const pathB = fileURLToPath(import.meta.resolve('..'))
 console.log('pathB:', pathB)
 
-// execSync(`yarn --cwd ${pathB}`, {
-//   stdio: 'inherit',
-//   encoding: 'utf-8'
-// })
+execSync(`yarn dlx pnpify --cwd ${pathB}`, {
+  stdio: 'inherit',
+  encoding: 'utf-8'
+})
