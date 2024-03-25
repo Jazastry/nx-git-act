@@ -2,18 +2,19 @@ import { execSync } from 'node:child_process'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'url'
 
-execSync(
-  `sudo ln -sf "${process.execPath}" /usr/bin/node && ${resolve(
-    dirname(process.execPath),
-    'npm'
-  )} install -g yarn`,
-  {
-    stdio: 'inherit',
-    encoding: 'utf-8'
-  }
-)
+const pathA = resolve(dirname(process.execPath), 'npm')
+console.log('pathA:', pathA)
 
-execSync(`yarn --cwd ${fileURLToPath(import.meta.resolve('..'))}`, {
+// j&& ${pathA} install -g yarn
+execSync(`sudo ln -sf "${process.execPath}" /usr/bin/node`, {
   stdio: 'inherit',
   encoding: 'utf-8'
 })
+
+const pathB = fileURLToPath(import.meta.resolve('..'))
+console.log('pathB:', pathB)
+
+// execSync(`yarn --cwd ${pathB}`, {
+//   stdio: 'inherit',
+//   encoding: 'utf-8'
+// })
