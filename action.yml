@@ -1,6 +1,7 @@
-name: '@raegen/nx'
-description: 'Github action for executing nx commands cached with @actions/cache'
-author: '@raegen'
+name: '@jazastry/nx-git-act'
+description:
+  'Github action for executing nx commands cached with @actions/cache'
+author: '@jazastry'
 
 branding:
   icon: 'battery'
