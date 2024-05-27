@@ -743,7 +743,7 @@ __metadata:
   resolution: "@jazastry/nx-git-act@workspace:."
   dependencies:
     "@actions/core": "npm:^1.10.1"
-    "@nx/devkit": "npm:^17.2.8"
+    "@nx/devkit": "npm:^19.1.0"
     "@raegen/github-runner": "npm:^0.1.5"
     "@tsconfig/node20": "npm:^20.1.2"
     "@types/jest": "npm:^29.5.11"
@@ -1097,6 +1097,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:19.1.0":
+  version: 19.1.0
+  resolution: "@nrwl/devkit@npm:19.1.0"
+  dependencies:
+    "@nx/devkit": "npm:19.1.0"
+  checksum: 10c0/af8283e4e6383cfaf417037cba61472f5f042a5847c97ae062badda22a5bc385247a77667326ff5c4a563610166d8e78971253bb55160563195a437c858d30f0
+  languageName: node
+  linkType: hard
+
 "@nrwl/tao@npm:17.2.8":
   version: 17.2.8
   resolution: "@nrwl/tao@npm:17.2.8"
@@ -1123,6 +1132,25 @@ __metadata:
   peerDependencies:
     nx: ">= 16 <= 18"
   checksum: 10c0/e339e2d0616b4374a7677ce3076b06c9b7d5619628b32ff41e6828c25d1bfd6fe4f71347d6151db078565bc2d8101d3ce75bcb67613c3a5c7eae3ed06b6432b3
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:19.1.0, @nx/devkit@npm:^19.1.0":
+  version: 19.1.0
+  resolution: "@nx/devkit@npm:19.1.0"
+  dependencies:
+    "@nrwl/devkit": "npm:19.1.0"
+    ejs: "npm:^3.1.7"
+    enquirer: "npm:~2.3.6"
+    ignore: "npm:^5.0.4"
+    minimatch: "npm:9.0.3"
+    semver: "npm:^7.5.3"
+    tmp: "npm:~0.2.1"
+    tslib: "npm:^2.3.0"
+    yargs-parser: "npm:21.1.1"
+  peerDependencies:
+    nx: ">= 17 <= 20"
+  checksum: 10c0/a2e362d1d56415c3cdc9bb15960b8dbc2eed59760ce7cdda1ed72c3d97d08c7ba943484b343e8bde99c002e27a3513708928783b475b6d3544c2c3a686087956
   languageName: node
   linkType: hard
 
